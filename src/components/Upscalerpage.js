@@ -103,7 +103,7 @@ const UpscalerPage = () => {
             clearInterval(progInterval);
             setLoading(false);
             setProgress(0);
-            const msg = err.response?.data?.message || 'Upscaling failed. Please check your API key.';
+            const msg = err.response?.data?.message || 'Upscaling failed. Please try again.';
             toast.error(msg);
         }
     };
